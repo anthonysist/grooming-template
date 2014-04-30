@@ -1,0 +1,302 @@
+<div class="row">
+    
+        <div class="col-xs-12" id="tealContainer">
+        
+            <div class="row services" id="whiteContainer">
+                
+                <div class="col-xs-12 visible-xs">
+                    <span class="divider">
+                        <span>
+                            SERVICES
+                        </span>
+                    </span>
+                </div>
+                <h2>
+                    The Business offers Boarding, Grooming, Daycare, and Home Pet Sitting.
+                </h2>
+                <ul class="nav nav-tabs" id="myTabs">
+                      <li id="boarding-tab" ng-class="{active: $route.current.activeTab == 'boarding'}"><a class="services-tab" href="#boarding" data-toggle="tab">Boarding</a></li>
+                      <li id="grooming-tab" ng-class="{active: $route.current.activeTab == 'grooming'}"><a class="services-tab"  href="#grooming" data-toggle="tab">Grooming</a></li>
+                      <li id="additional-tab" ng-class="{active: $route.current.activeTab == 'additional'}"><a class="services-tab" href="#additional" data-toggle="tab">Additional</a></li>
+                </ul>
+               
+               <!--Boarding-->
+                <div class="tab-content">
+                  <div id="boarding" class="tab-pane fade in active">
+                      <ul class="dotted">
+                              <li>
+                                  <div class="item">
+                                      <span>Guest Boarding</span>
+                                  </div>
+                                  <div class="prices">
+                                      <div>
+                                          <span>$29</span>
+                                      </div>
+                                  </div>
+                                  <p>Private room or open boarding, per night.</p>
+                              </li>
+                              <li>
+                                  <div class="item">
+                                      <span>Cat Boarding</span>
+                                  </div>
+                                  <div class="prices">
+                                      <div>
+                                          <span>$16</span>
+                                      </div>
+                                  </div>
+                                  <p>Private room or open boarding, per night.</p>
+                              </li>
+                              <li>
+                                  <div class="item">
+                                      <span>Small Pet Boarding</span>
+                                  </div>
+                                  <div class="prices">
+                                      <div>
+                                          <span>$12^</span>
+                                      </div>
+                                  </div>
+                                  <p>Pricing based on type of animal and care required.</p>
+                              </li>
+                              <li>
+                                  <div class="item">
+                                      <span>Home Visit</span>
+                                  </div>
+                                  <div class="prices">
+                                      <div>
+                                          <span>$20</span>
+                                      </div>
+                                  </div>
+                                  <p>Pet care in your home. Price per visit.</p>
+                              </li>  
+                              <li>
+                                  <div class="item">
+                                      <span>Overnight Home Visit</span>
+                                  </div>
+                                  <div class="prices">
+                                      <div>
+                                          <span>$65</span>
+                                      </div>
+                                  </div>
+                                  <p>Overnight pet care in your home. Price per visit.</p>
+                              </li>
+                      </ul>
+                          <img src="http://placekitten.com/258/300" />
+                    </div>
+                    
+                <!--Grooming-->
+                
+                    <div ng-controller="groomingCtrl" id="grooming" class="tab-pane fade in">
+
+                        
+                        <div>
+                            <ul class="dotted">
+                            <h2>Dogs</h2>
+
+
+                                
+                                  <select id='breedSelect' class="item form-control" role="menu" ng-model="selectedBreed" ng-options="breed.name for breed in breeds" ng-change="setBreed(selectedBreed)">
+                                <option class="form-control" value="">
+                                    Select A Breed
+                                </option>
+                            </select>  
+                            
+
+                            
+
+                            <li>
+                                <div class="item">
+                                    <span ng-bind="breed"></span>
+                                </div>
+                                <div class="prices">
+                                    <div>
+                                        <span ng-bind="price"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            
+                            <div class="separator">
+                                
+                            </div>
+                            
+                            <h2>Cats</h2>
+                            
+                                <li>
+                                    <div class="item">
+                                        <span>Baths only</span>
+                                    </div>
+                                    <div class="prices">
+                                        <div>
+                                            <span>$15</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <span>Flea Dip</span>
+                                    </div>
+                                    <div class="prices">
+                                        <div>
+                                            <span>$20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <span>Medicated Bath</span>
+                                    </div>
+                                    <div class="prices">
+                                        <div>
+                                            <span>$20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <span>Nails</span>
+                                    </div>
+                                    <div class="prices">
+                                        <div>
+                                            <span>$10</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <span>Shave or Groom</span>
+                                    </div>
+                                    <div class="prices">
+                                        <div>
+                                            <span>$60</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <span>Baths only</span>
+                                    </div>
+                                    <div class="prices">
+                                        <div>
+                                            <span>$15</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pull-left hidden-xs">
+                            <img src="http://placekitten.com/258/300" />
+                        </div>
+                        
+                    </div>
+                 
+                 <!--Additional-->
+                
+                  <div id="additional" class="tab-pane fade in">
+                      <ul class="dotted">
+                        <li>
+                            <div class="item">
+                                <span>Warm Bath</span>
+                             </div>
+                            <div class="prices">
+                                <div>
+                                    <span>$15</span>
+                                 </div>
+                             </div>
+                            <p>For Small Doggies</p>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <span>Warm Bath</span>
+                             </div>
+                            <div class="prices">
+                                <div>
+                                    <span>$20</span>
+                                 </div>
+                             </div>
+                            <p>For Larger Doggies</p>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <span>Nail Trim</span>
+                             </div>
+                            <div class="prices">
+                                <div>
+                                    <span>$10^</span>
+                                 </div>
+                             </div>
+                            <p>We will also dremmel the nails.</p>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <span>Doggy Day Care</span>
+                             </div>
+                            <div class="prices">
+                                <div>
+                                    <span>$9</span>
+                                 </div>
+                             </div>
+                            <p>Prices vary for pickups and deliveries.</p>
+                        </li>
+                        <li>
+                           <div class="item">
+                               <span>Pet Pics!</span>
+                           </div>
+                           <div class="prices">
+                               <div>
+                                   <span>$5</span>
+                               </div>
+                           </div>
+                           <p>We will email or text you photos of your babies! Price per 5 pics.</p>
+                       </li>
+                           <li>
+                           <div class="item">
+                               <span>Daily Brushing</span>
+                           </div>
+                           <div class="prices">
+                               <div>
+                                   <span>$2</span>
+                               </div>
+                           </div>
+                           <p>We will brush your dog and free them of any tangles or dirt.</p>
+                       </li>
+                           <li>
+                           <div class="item">
+                               <span>Yummy Take-Home Bones.</span>
+                           </div>
+                           <div class="prices">
+                               <div>
+                                   <span>$10</span>
+                               </div>
+                           </div>
+                           <p>Filled with pork or chicken.</p>
+                       </li>
+                           <li>
+                           <div class="item">
+                               <span>Peanut Butter Bones</span>
+                           </div>
+                           <div class="prices">
+                               <div>
+                                   <span>$8</span>
+                               </div>
+                           </div>
+                           <p>Sterilized bones filled with Peanut Butter.</p>
+                       </li>
+                    </ul>
+                    <img src="http://placekitten.com/258/300" />
+                  </div>
+                </div>
+             </div>
+        </div>
+    </div>
+   
+
+
+
+ 
+
+
+    
+    
+
+ 

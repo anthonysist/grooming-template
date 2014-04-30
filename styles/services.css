@@ -1,0 +1,249 @@
+#tealContainer #whiteContainer {
+    position:relative;
+}
+
+    .container #whiteContainer .appointment {
+        position:absolute;
+        right:-15px;
+        top:-15px;
+        z-index:1;
+    }
+
+        .container #whiteContainer .services-tab {
+    
+            font-size: 18px;
+            color: #7F6B5B;
+            padding-bottom: 10px;
+
+        }
+
+        .container #whiteContainer h2 {
+            font-size: 36px;
+            line-height: 30px;
+            text-align: center;
+            font-family: 'Montez', cursive;
+            color: #717073;
+            margin-top:0px;
+            margin-bottom:30px;
+        }
+
+        .container #whiteContainer .services-tab {
+            font-size: 14px;
+            color: #7F6B5B;
+            padding: 10px;
+        }
+
+
+            .tab-content > .active {
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #CCCCCC;
+                border-left: 1px solid #CCCCCC;
+                border-right: 1px solid #CCCCCC;
+                display: block;
+                padding:20px;
+                overflow:hidden;
+                margin-bottom:30px;
+            }
+
+            
+        
+           
+
+
+#grooming #breedSelect {
+    width: 100%;
+    margin-bottom:20px;
+    max-width:545px;
+}
+
+            .container #whiteContainer #grooming h2 {
+                text-align:center;
+                margin-bottom:18px;
+            }
+
+            .container #whiteContainer #grooming .separator {
+                float:left;
+                height:30px;
+                width:100%;
+                clear:both;
+            }
+
+            ul.dotted {
+                padding-left:0;
+            }
+
+            ul.dotted li {
+                margin-bottom:20px;
+            }
+
+            ul.dotted li, ul.dotted div {
+                height: inherit;
+                list-style-type: none;
+            }
+
+            ul.dotted > li div {
+                float: left;
+                width: 50%;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .dotted div.item {
+                width: 80%;
+            }
+
+            .dotted div.prices {
+                width: 20%;
+                overflow: visible;
+                text-align:right;
+            }
+
+            .dotted div.item, .dotted div.prices {
+                height: 20px;
+                font-weight: bold;
+            }
+
+            ul.dotted span {
+                display: block;
+                position: absolute;
+                padding: 0 5px;
+            }
+
+            ul.dotted span:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 67%;
+                width: 1000px;
+                border-top: 2px dotted #000;
+            }
+
+            div.item span {
+                left: 0;
+                color:#E46866;
+            }
+
+            div.item span:after {
+                left: 100%;
+            }
+
+            div.prices span {
+                right: 0;
+                width: 80%;
+                color:#4A6C16;
+            }
+
+            div.prices div {
+                width: 100% !important;
+            }
+
+            div.prices span:after {
+                right: 100%;
+            }
+            ul.dotted p {
+                padding: 0px 5px 0px;
+                clear: both;
+                margin-bottom: 0;
+            }
+
+            
+
+    
+
+#grooming .circleContainer #circle:hover {
+       
+        border: 3px solid  #8E887D;
+          
+    }
+
+
+
+
+@media(min-width:768px){
+    
+    #grooming .circleContainer #circle {
+        border: 1px solid #8E887D;
+        border: 3px solid transparent;
+        margin-top:100px;
+        margin-bottom:100px;
+        height: 250px;
+        width: 300px;
+        display: inline-block;
+    }  
+    
+  .container #whiteContainer h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Montez', cursive;
+      
+  }
+    
+    .container #whiteContainer .services-tab {
+        font-size: 20px;
+        color: #939393;
+        padding-bottom: 10px;
+    }
+    
+    #grooming .circleContainer #circle {
+        border: 1px solid #8E887D;
+        border: 3px solid transparent;
+        margin-top:100px;
+        margin-bottom:100px;
+        height: 250px;
+        width: 300px;
+        display: inline-block;
+    } 
+    
+    #grooming #breedSelect {
+        width: 80%;
+        margin-left:19px;
+        margin-bottom:10px;
+    }
+    
+    ul.dotted {
+        float: left;
+        padding-right: 0;
+        width: 380px;
+    }
+    
+    ul.dotted p {
+        width:330px;
+    }
+    
+    .dotted div.item {
+         width: 76%;
+     }
+
+    .dotted div.prices {
+        width: 13%;
+        overflow: visible;
+    } 
+    
+    
+
+}
+
+@media(min-width:992px){
+    
+     ul.dotted {
+        float: left;
+        padding-left: 0;
+        padding-right: 50px;
+        width: 600px;
+     }
+    
+    #grooming .left {
+        float:left;
+    }
+    
+    .container #whiteContainer #grooming .separator {
+        height:20px;
+        width:556px;
+    }
+    
+    #grooming select {
+        margin-bottom:20px;
+        
+    }
+    
+}

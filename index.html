@@ -1,0 +1,124 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Barkshack - Grooming and Boarding</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css({.tmp,app}) styles/main.css -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/about.css">
+      <link rel="stylesheet" href="styles/services.css">
+      <link rel="stylesheet" href="styles/gallery.css">
+      <link rel="stylesheet" href="styles/faqs.css">
+      <link rel="stylesheet" href="styles/contact.css">
+      <link rel="stylesheet" href="styles/appointment.css">
+      <link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+      
+      
+      <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      
+      <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key= 	
+AIzaSyB-jSI5dBK2g-TWIoZEICE5md3Bf-wu1uE&sensor=true">
+    </script>
+      
+      
+
+        <!-- endbuild -->
+</head>
+  <body ng-app="barkApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+      
+    <!-- This will be the place for the header -->
+      
+
+      <!-- Static navbar -->
+          <div class="navbar navbar-fixed-top" role="navigation" ng-controller="HeaderCtrl">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                  <a class="navbar-brand" href="#/index" title="Barkshack">
+                    <img src="images/logo.png" />
+                </a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a ng-click="toggleNav()" ng-class="getClass('/about')" href="#/about">ABOUT</a></li>
+                    <li><a ng-click="toggleNav()" ng-class="getClass('/services')" href="#/services/boarding">SERVICES</a></li>
+                    <li><a ng-click="toggleNav()" ng-class="getClass('/gallery')" href="#/gallery">GALLERY</a></li>
+                    <li><a ng-click="toggleNav()" ng-class="getClass('/faqs')" href="#/faqs">FAQ</a></li>
+                    <li><a ng-click="toggleNav()" ng-class="getClass('/contact')" href="#/contact">CONTACT</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="social">
+                    
+                    <li class=""><a href="mailto:youremail@email.com"><img src="images/envelope.png" /></a></li>
+                    <li class=""><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" /></a></li>
+                    <li><a href="http://instagram.com/" target="_blank"><img src="images/instagram.png" /></a></li>
+                    <li class="visible-xs"><a href="tel:7191111111" target="_blank"><img src="images/images.jpg" /></a></li>
+                    <li class="visible-xs" ng-click="getLocation()"><a href=""><img src="images/directions.png" /></a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+          </div>
+        
+          <!-- Add your site or application content here -->
+          <div class="container body" ng-view="">
+
+          </div>
+      
+    <div id="footer">
+      <div class="container">
+      	  <p>
+              <a href="http://www.tabethamoe.com">Website by Slice &copy; 2014</a>
+          </p>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+      <script src="scripts/portals.js"></script>
+
+     
+    <script src="bower_components/angular/angular.js"></script>
+    
+
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/services.js"></script><script src="scripts/services.js"></script>
+    <script src="scripts/responsive-calendar.min.js"></script>
+     
+</html>

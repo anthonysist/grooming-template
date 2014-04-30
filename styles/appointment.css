@@ -1,0 +1,195 @@
+/*
+    Document   : app/styles/appointment.css
+    Created on : 2014-03-24 10:32 AM
+    Author     : talymo
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+#appointment .btn-primary {
+    background-color:#002D56;
+    border-color:#002D56;
+}
+
+    #appointment .btn-primary:hover {
+        background-color:#f3f3f3;
+        color:#4D2F15;
+    }
+
+.responsive-calendar {
+    margin-top:30px;
+}
+
+.responsive-calendar .controls {
+  text-align: center;
+}
+.responsive-calendar .controls a {
+  cursor: pointer;
+}
+.responsive-calendar .controls h4 {
+  display: inline;
+}
+.responsive-calendar .day-headers,
+.responsive-calendar .days {
+  font-size: 0;
+}
+.responsive-calendar .day {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  width: 14.285714285714286%;
+  text-align: center;
+}
+.responsive-calendar .day a {
+  color: #000000;
+  display: block;
+  cursor: pointer;
+  padding: 20% 0 20% 0;
+}
+.responsive-calendar .day a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+.responsive-calendar .day.header {
+  border-bottom: 1px #BCA898 solid;
+}
+
+.responsive-calendar .day.picked {
+    background-color:#BCA898;
+}
+.responsive-calendar .day.active a {
+  background-color: #1d86c8;
+  color: #ffffff;
+}
+.responsive-calendar .day.active a:hover {
+  background-color: #36a0e2;
+}
+.responsive-calendar .day.active .not-current {
+  background-color: #8fcaef;
+  color: #ffffff;
+}
+.responsive-calendar .day.active .not-current:hover {
+  background-color: #bcdff5;
+}
+.responsive-calendar .day.not-current a {
+  color: #ddd;
+}
+.responsive-calendar .day .badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 1;
+}
+
+.responsive-calendar .day.past a {
+    color:#ccc;
+    cursor:default;
+}
+
+.responsive-calendar .day.past a:hover {
+    background-color:transparent;
+}
+
+.responsive-calendar .day.today {
+    background-color:#DEE8E7;
+}
+
+#appointment #appointmentMeta {
+    padding:20px;
+}
+
+    #appointment #whiteContainer h2 {
+        text-align:center;
+        margin:0;
+    }
+
+	#appointment #appointmentMeta p {
+        font-weight:700;
+    }
+
+		#appointment #appointmentMeta .appointmentCard {
+            background-color:#fff;
+            padding:30px;
+            box-shadow:1px 1px 1px 2px #ccc;
+        }
+
+		#appointment #appointmentMeta .appointmentCard h2 {
+            border-bottom:1px solid #4A6C16;
+            margin-bottom:10px;
+            padding-bottom:10px;
+        }
+
+        .checkbox-inline {
+            margin-left:10px;
+            color:#7F6B5B;
+        }
+
+            .checkbox-inline input {
+                margin-top:2px;
+            }
+
+            #appointment select {
+                margin-bottom:10px;
+            }
+
+            #appointment .form-control button {
+                color:#fff;
+            }
+
+    #appointment #appointmentMeta p span {
+        color:#4A6C16;
+    }
+
+    #appointment #addressStuff input,
+    #appointment #contactStuff input {
+        margin-top:10px;
+    }
+
+    #appointment #appointmentMeta .btn-primary{
+        border-radius:0;
+        height:45px;
+        margin-top:20px;
+    }
+
+    #appointment #pickup {
+        margin-top:5px;
+    }
+
+    #appointment #whiteContainer h2.marginTop {
+        margin-top:20px;
+    }
+
+        
+
+@media(min-width:768px){
+    .checkbox-inline {
+        margin-left:0;
+    }
+    
+    
+    
+    .marginTop {
+        margin-top:20px;
+    }
+    
+    
+    
+}
+
+@media(min-width:992px){
+    
+}
+
+@media(min-width:1120px){
+    
+}
+
+
+
+
+
+
+
+
+

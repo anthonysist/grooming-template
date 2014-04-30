@@ -1,0 +1,73 @@
+/*
+    Document   : app/styles/contact.css
+    Created on : 2014-03-23 09:44 PM
+    Author     : talymo
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+#contact #info {
+    margin-bottom:20px;
+}
+    
+    #contact #info h3 {
+        font-size:20px;
+        color:#717073;
+        padding-bottom:10px;
+        border-bottom:1px solid #4A6C16;
+    }
+
+    #contact #info p {
+        margin:0;
+    }
+
+    #contact #info a,
+    #contact #form label {
+        color:#4A6C16;
+    }
+
+    #contact #info p.address {
+        margin-top:20px;
+    }
+
+    #contact #info p.margin-left {
+        margin-left:37px;
+    }
+
+    #contact #form input,
+    #contact #form textarea {
+        border-radius:0;
+    }
+
+    #contact #form .btn {
+        background-color:#002D56;
+        border-color:#002D56;
+        border-radius:0;
+        margin-bottom:30px;
+    }
+
+    #contact #form .btn:hover {
+        background-color:#E7E7E1;
+        border-color:#7F6B5B;
+        color:#7F6B5B;
+    }
+
+    #contact .form-control {
+        color:#7F6B5B;
+
+@media(min-width:768px){
+    #contact #form {
+        padding:20px;
+    }
+    
+    #contact #form .half {
+        width:47%;
+        float:left;
+    }
+    
+    #contact #form .half:first-of-type {
+        margin-right:6%;
+    }
+    
+}

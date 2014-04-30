@@ -1,0 +1,103 @@
+
+    #about img {
+        margin-bottom:20px;
+    }
+
+    #about p {
+        padding:0 10px;
+        text-align:center;
+        line-height:28px;
+        font-size:16px;
+        margin-bottom:30px;
+    }
+
+
+
+@media(min-width:992px){
+    #about p {
+        padding: 0 50px;
+        line-height:28px;
+    }
+}
+
+
+/*
+
+
+
+#contentContainer {
+    background-color: #A1C1BE;
+    padding: 24px 25px;
+    margin-top: 0;
+}
+
+        #contentContainer #innerContainer {
+            border: 4px double #C5BCB5;
+            padding: 10px 0 0 0;
+            background-color:#fff;
+        }
+
+        #contentContainer #innerContainer #aboutHero {
+            padding-left: 10px;
+            padding-right:10px;
+        }
+
+        #contentContainer #inner {                       
+            padding-right: 10px;
+            padding-left: 10px;   
+        }
+
+            #contentContainer #innerContainer .largeContent {
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 16px;
+                color:#8E887D;
+            }
+
+
+            #innerContainer #text {
+                padding-top:50px;
+            }   
+
+                #innerContainer #text > p {
+                    font-size: 14px;
+                    padding: 0 10px 10px 10px;
+                    color: #59554E
+                    margin: 30px;
+                }
+
+
+@media(min-width:768px){
+    #aboutDivider {
+        display: none;
+    }
+    
+    #contentContainer {
+        margin-top: 50px;
+    }
+
+    #contentContainer #innerContainer .largeContent { 
+        padding: 0 40px;
+    }
+    
+    #contentContainer #innerContainer {
+        padding: 65px 61px;
+    }
+    
+    #contentContainer #innerContainer #aboutHero {
+            padding-left: 0;
+            padding-right:0;
+        }
+     
+    #innerContainer #text > p {
+        padding: 0 0 10px 0; 
+        font-size: 16px;
+    }
+    
+    #contentContainer #innerContainer .largeContent {
+        padding: 0;
+        font-size: 28px;
+    }
+}
+
+*/
